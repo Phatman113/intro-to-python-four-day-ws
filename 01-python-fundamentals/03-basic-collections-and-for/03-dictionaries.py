@@ -40,3 +40,5 @@ for key, value in key_examples.items():
 # "Ghastly Business". Write a line of code that accesses that value,
 # stores it into a variable, and then prints the value of that variable
 # to the console. You should use "bracket notation" or the .get function
+
+print(key_examples.get(None)[3])

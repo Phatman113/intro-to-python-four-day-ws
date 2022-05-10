@@ -44,3 +44,12 @@ while x > 10:
 
 # Micro-exercise: use a while loop to compute the sum of all the numbers
 # 1 through 100. 
+
+x = 0
+i = 0
+while i < 100:
+    i += 1
+    print(x,' + ', i)
+    x += i
+    
+print (x)

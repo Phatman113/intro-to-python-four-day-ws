@@ -68,3 +68,10 @@ print(new_list)
 # Micro-Exercise: append three more values to new_list, then loop
 # over all the values in new_list and for each value print the 
 # value AND type.
+new_list.append("get")
+new_list.append("out")
+new_list.append("of here")
+
+for i in new_list:
+    print(i, type(i))
+

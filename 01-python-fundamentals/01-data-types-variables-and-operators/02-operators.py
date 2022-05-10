@@ -60,3 +60,6 @@ x /= 4 #  x = x / 4
 
 # Micro-Exercise: predict the value of x. Then write a comparison statement 
 # involving x that evaluates to False. Print the result of that comparison.
+
+print('x == 4',x == 4)
+print('x == 3',x == 3)

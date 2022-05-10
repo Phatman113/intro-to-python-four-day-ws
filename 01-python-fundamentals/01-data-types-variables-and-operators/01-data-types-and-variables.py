@@ -5,6 +5,9 @@
 # Data comes in a variety of types. These two versions
 # of the number one are not the same. One is a number, 
 # the other is a piece of text.
+from operator import truediv
+
+
 x = 1
 y = '1'
 
@@ -52,7 +55,7 @@ print(type(coerced_int), coerced_int)
 print(type(coerced_float), coerced_float)
 
 # But, not everything can be coerced
-int("This will cause an error")
+#int("This will cause an error")
 
 # Python also provides a function that can report whether or not a string
 # can be coerced to a number without actually attempting the coercion.
@@ -66,10 +69,23 @@ print(cannot_convert, cannot_convert.isnumeric())
 # Then, pick one of the variables defined above and reassign 
 # it to have the same value as the variable you created.
 # Prove your code works with a print statement.
-
+bob = "It's my variable and I'll print if I want to"
+print(cannot_convert)
+cannot_convert = bob
+print(cannot_convert)
 
 
 # Micro-Exercise 2: try using the bool() and str() functions to coerce some
 # non-boolean data into a boolean and some non-string data to a string.
 # Perform (at least) 1 such coercion for each of bool() and str() and 
 # examine the results using print.
+non_text = 45
+non_bool = "true"
+
+print(type(non_text), non_text)
+print(type(non_bool), non_bool)
+not_non_text = str(non_text)
+not_non_bool = bool(non_bool)
+print(type(not_non_text), not_non_text)
+print(type(not_non_bool), not_non_bool)
+

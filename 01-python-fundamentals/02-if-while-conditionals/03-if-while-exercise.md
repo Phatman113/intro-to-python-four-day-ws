@@ -44,3 +44,6 @@ user_input = input("Type some input")
 ```
 
 Note that the `type` of `user_input` will **always** be a string. See the [`input` function documentation](https://docs.python.org/3/library/functions.html#input) for more information.
+
+
+rand_int = random.randint(1,100)
