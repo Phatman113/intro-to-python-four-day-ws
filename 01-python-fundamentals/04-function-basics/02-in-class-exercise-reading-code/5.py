@@ -28,3 +28,4 @@ y = [3, 4, 5, 8, 10, 1]
 
 # What will the following code print?
 print(intersection(x, y))
+

@@ -6,7 +6,9 @@ Return False otherwise.
 """
 def is_palindrome(input_string):
     # Delete pass, and put your code here.
-    pass
+    return input_string == input_string[::-1]
+
+    #pass
 
 
 # Very Simple Tests:
@@ -16,6 +18,10 @@ assert is_palindrome('wasitabatisaw') == True
 assert is_palindrome('a') == True
 assert is_palindrome('abca') == False
 ## ADD AT LEAST 3 MORE TESTS ##
+assert is_palindrome('alphbeticallacitebhpla') == True
+assert is_palindrome('123454321') == True
+assert is_palindrome('do spaces work krow secaps od') == True
+assert is_palindrome('nope, this isn\'t') == False
 
 ## Just helpful to see, if this prints your tests all passed!
 print("All tests passed.")

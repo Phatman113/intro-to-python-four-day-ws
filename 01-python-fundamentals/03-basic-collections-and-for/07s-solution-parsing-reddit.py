@@ -35,6 +35,7 @@ sum_of_upvote_ratio = 0
 # Iterate over the posts, extract the data, print
 for post in posts:
     post_data = post['data']
+    
     title = post_data['title']
     username = post_data['author']
     upvote_ratio = post_data['upvote_ratio']

@@ -18,3 +18,10 @@ some_string = 'This is a boring sentence.'
 mystery_value = mystery_function(some_string)
 
 print(mystery_value)
+
+#it will read each letter of the string, for blanks it won't do anything it will reset the counter to 0, 
+#this should essentially count the length of the last word in the string
+
+#9
+
+#oh, it counts the number of times letters were used in a string

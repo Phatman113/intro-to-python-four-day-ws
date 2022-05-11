@@ -23,6 +23,7 @@ def mystery_function_two(names):
     
     return counter
 
+#This will count a name that starts with 'A' and ends with 'z' as 2, whereas the first one will only count it as 1
 
 # Test your understanding of the above functions by predicting their output
 # with the following input.
@@ -37,7 +38,9 @@ student_names = [
 ]
 
 return_one = mystery_function(student_names)
+#4
 return_two = mystery_function_two(student_names)
+#5
 
 # What will these print?
 print(return_one)

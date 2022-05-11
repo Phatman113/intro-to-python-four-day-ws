@@ -66,25 +66,25 @@ print(x is y)
 a = 1
 b = 1
 c = a
-print(a is b)
-print(b is c)
-print(a is c)
+print(a is b) #False - actually T
+print(b is c) #False - actually T
+print(a is c) #True
 
 d = 'hello'
 e = 'hello'
 f = d
-print(d is e)
-print(e is f)
-print (f is d)
+print(d is e) #False - actually T
+print(e is f) #False - actually T
+print (f is d) #True
 
 h = [a, b, c]
 i = [a, b, c]
 j = h
-print(h is i)
-print(h == i)
+print(h is i) #False
+print(h == i) #True
 
-print(i is j)
-print(i == j)
+print(i is j) #False
+print(i == j) #True
 
-print(h is j)
-print(h == j)
+print(h is j) #True
+print(h == j) #True

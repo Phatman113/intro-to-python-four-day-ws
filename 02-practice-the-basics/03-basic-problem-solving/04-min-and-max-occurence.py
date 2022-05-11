@@ -15,14 +15,34 @@ can select arbitrarily, that is the following would ALL be correct:
 If the input list is empty, return an empty list.
 """
 def most_and_least_common(input_list):
-    # Delete pass, and put your code here.
-    pass
+  #Check for null input
+  if input_list == []:
+    return []
+  else:
+    usage_counts = {}
+    
+    for item in input_list:
+      #Check if item used before, add to count dictionary if not
+      if item not in usage_counts:
+        usage_counts[item] = 0
+      #iterate usage count
+      usage_counts[item] += 1
+    
+    #Find min/max in usage counts
+    max_value = max(usage_counts,key=usage_counts.get)
+    min_value = min(usage_counts,key=usage_counts.get)
+
+
+    #min_value = sorted(usage_counts.values(), key=usage_counts.get)[0]
+    #max_value = sorted(usage_counts.values(), key=usage_counts.get)#[-1]
+    return [max_value,min_value]
+  pass
 
 
 # Very Simple Tests
 assert most_and_least_common([]) == []
 assert most_and_least_common([1]) == [1, 1]
-assert most_and_least_common([1,2,2]) == [2, 1]
+assert most_and_least_common([1,2,2,2]) == [2, 1]
 assert most_and_least_common([1, 2, 1, 2, 3, 1, 2, 2]) == [2, 3]
 
 ## ADD AT LEAST 3 MORE TESTS ##

@@ -35,3 +35,6 @@ print(even_squares)
 #   * Uses True as the value for greetings that use 3 or fewer letters.
 #   * Uses False as the value for greetings that use more than 3 letters.
 greetings = ['hello', 'hi', 'good morning', 'howdy', 'hey']
+
+yes_h = {greet: len(greet) <= 3 for greet in greetings if greet[0] == 'h'}
+print(yes_h)

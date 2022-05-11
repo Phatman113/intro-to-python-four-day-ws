@@ -42,3 +42,10 @@ print(uses_keywords(1, 2, c=3)) # This is the preferred syntax for calling a fun
 # accepts 3 parameters, uses math operators to combine them
 # and returns the result of that math. The result should also
 # be a number.
+
+def fancy_math(a=0,b=0,c=0):
+    return (a**2+b**2)*c**2
+
+print(fancy_math(2,4,1),'round 1')
+print(fancy_math(),'blank')
+print(fancy_math(b=3,a=2),'out of order')
