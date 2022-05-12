@@ -69,3 +69,15 @@ with new_file_path.open(mode='r') as new_file:
 # then write some data to it. Afterwards, open the file a second
 # time and print the contents to the console.
 
+new_file_path_2 = output_dir / 'my_file.txt'
+print(new_file_path_2, '\n')
+
+with open(new_file_path_2, mode='w') as new_file:
+    new_file.write("Wuzzzzzaaaaaaah!")
+#print(new_file_path_2)
+
+
+with open(new_file_path_2, mode='a') as new_file:
+    new_file.write("\nmy brothas!")
+#print(new_file_path_2)
+

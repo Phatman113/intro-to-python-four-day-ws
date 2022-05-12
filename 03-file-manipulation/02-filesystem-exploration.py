@@ -30,3 +30,10 @@ for child_path in e_folder.rglob('*.txt'):
 # Micro-exercise: Write some code that recursively searches through 
 # the example_folder hierarchy and print the contents of files
 # that contain the word "are" as well as the filepath to that file
+
+for child_path in e_folder.rglob('*.txt'):
+    with open(child_path, mode='r') as new_file:
+        file_text = new_file.read()
+        if 'are' in file_text:
+            print(child_path)
+            print(file_text)

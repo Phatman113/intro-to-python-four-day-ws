@@ -37,3 +37,19 @@ print(content['current_user_url'])
 # Micro-exercise: use the requests library to make a get request 
 # to a website of your choice. Examine the headers and content 
 # of the response object.
+
+
+burger=requests.get('https://icanhas.cheezburger.com/')
+
+print(dir(burger), '\n')
+
+print(burger.status_code, '\n') 
+
+print(burger.headers, '\n')
+
+print(burger.headers['Content-Type'], "\n")
+
+print(burger.text, '\n\n')
+
+#content = response.json()
+#print(content['current_user_url'])

@@ -77,3 +77,15 @@ print(prediction)
 # then create two new lists of x and y data and fit the model on that data.
 # Then, print the slope and y_intercept of your model, and use it to make a
 # prediction for some made up x point.
+
+
+linear_model_2 = SimpleLinearRegression()
+
+x_list = [5,10,15,20,25,30,35]
+y_list = [1,2,3,4,5,6,7]
+
+linear_model_2.fit(x_list,y_list)
+print(linear_model_2.slope,linear_model_2.y_intercept)
+
+prediction_2 = linear_model.predict(100.5)
+print(prediction_2)

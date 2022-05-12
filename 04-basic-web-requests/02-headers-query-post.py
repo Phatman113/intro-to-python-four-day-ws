@@ -93,3 +93,17 @@ print(response.json())
 # Micro-exercise: Make a GET or POST request to the Postman Echo API.
 # If you are making a GET, set some query parameters. If you are making
 # a POST set some data. Either way, set at least the User-Agent header.
+
+post_req = requests.post(
+    'https://postman-echo.com/post',
+    headers = {
+        'Content-Type': 'application/json'
+    },
+    data={
+        'name': "it's a-me, Mario",
+        'favorite_joke': 'Elephants in cherry trees',
+        'favorite_things': 'these are just a few of them'
+    }
+)
+print(post_req.json())
+
